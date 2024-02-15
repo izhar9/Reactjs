@@ -7,7 +7,16 @@ function App() {
   //let counter = 15
   const addValue = () => {
     //counter = counter + 1
-    setCounter(counter + 1)
+    // setCounter(counter + 1)
+
+    // interview question
+    // setCounter((prevCounter) => prevCounter + 1) // ye callback funtion hai jo behind the sceane kamm karta hai useState ke setCounter me isi tarah niche bhi kiya bas () nahi lagaya hai.
+                                                // ye previous value leta hai uske baad use update karta hai. aur jitne baar call karenge utne baar update karega value. normal way(line 10 ) se sirf 1 baar hi update hoga value,chahe use kitne baar bhi call karo 
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    
     
   }
 
