@@ -1,24 +1,34 @@
 import { useState,useCallback, useEffect, useRef } from 'react'
 
-/* useCallback is a React Hook that lets you cache a function definition between re-renders. 
+/*
+- useCallback is a React Hook that lets you cache a function definition between re-renders. 
 ye do parameter leta hai ,1. function 2. dependencies(dependencies array[] ke form me hota hai)
 
-// `useCallback` is like a memory-saving tool in React. It helps your components remember functions, 
+- `useCallback` is like a memory-saving tool in React. It helps your components remember functions, 
 so they don't have to recreate them every time your component rerenders. Instead, it reuses the same function from before,
  which saves memory and makes your component work faster. It's like reusing a tool instead of making a new one each time you need it, which is efficient!
 
 */
 
 
-/* `useEffect` is a React Hook that runs code in your functional component after the component has rendered. It is used to handle side effects in your components, 
+/* 
+- `useEffect` is a React Hook that runs code in your functional component after the component has rendered. It is used to handle side effects in your components, 
 such as fetching data, updating the DOM, or dealing with certain error conditions. 
 
-`useEffect` allows us to listen to lifecycle events of your component and helps in making our components more dynamic and useful.
+- `useEffect` allows us to listen to lifecycle events of your component and helps in making our components more dynamic and useful.
 (useEffect एक React Hook है जो रियल टाइम में तब काम करता है जब आपके कंपोनेंट में कोई परिवर्तन होता है। यह किसी प्रकार के साइड इफेक्ट को हैंडल करने के लिए उपयोगी है, 
 जैसे कि डेटा लोड करना, डेटा रिफ्रेश करना, या किसी विशेष त्रुटि का उपचार करना। useEffect हमें आपके कंपोनेंट के लाइफसाइकल इवेंट्स को सुनने की सुविधा प्रदान करता है 
 और इसे हमारे कंपोनेंट को और डायनामिक और उपयोगी बनाने में मदद करता है।)
 
-useEffect का उपयोग React में किया जाता है जब हमें कोई काम किसी विशेष समय पर करना होता है, जैसे कि किसी डेटा को लोड करना या डेटा को अपडेट करना। यह हमें कंपोनेंट के विभिन्न चरणों में काम करने की सुविधा देता है।
+- useEffect का उपयोग React में किया जाता है जब हमें कोई काम किसी विशेष समय पर करना होता है, जैसे कि किसी डेटा को लोड करना या डेटा को अपडेट करना। यह हमें कंपोनेंट के विभिन्न चरणों में काम करने की सुविधा देता है।
+
+*/
+
+/*
+- useRef is a React Hook that lets you reference a value that’s not needed for rendering.
+- useRef create a mutable variable which will not re-render the components
+- with the help of useRef we can access a DOM element directly
+- useRef ek object return karta hai.
 
 */
 
